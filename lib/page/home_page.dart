@@ -342,35 +342,7 @@ class HomePage extends StatelessWidget {
               SizedBox(
                 height: 50,
               ),
-              Container(
-                child: BottomNavigationBar(
-                  items: [
-                    BottomNavigationBarItem(
-                      icon: Icon(Icons.home),
-                      label: 'Accueil',
-                    ),
-                    BottomNavigationBarItem(
-                      icon: Icon(Icons.favorite_outline),
-                      label: 'Favorite',
-                    ),
-                    BottomNavigationBarItem(
-                      icon: Icon(Icons.video_label),
-                      label: 'Tutoriel',
-                    ),
-                    BottomNavigationBarItem(
-                      icon: Icon(Icons.shopping_cart_outlined),
-                      label: 'Panier',
-                    ),
-                    BottomNavigationBarItem(
-                      icon: Icon(Icons.person_outline),
-                      label: 'Compte',
-                    ),
-                  ],
-                  selectedItemColor: Colors.red,
-                  unselectedItemColor: Colors.black,
-                  showUnselectedLabels: true,
-                ),
-              )
+              
             ],
           ),
         ),

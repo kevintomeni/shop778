@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:shop778/theme.dart';
 
-import 'page/home_page.dart';
+import 'routes.dart';
+import 'screens/splash/splash_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,8 +15,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-     debugShowCheckedModeBanner: false,
-      home: HomePage(),
+      theme: theme(),
+      debugShowCheckedModeBanner: false,
+      // home: SplashScreen(),
+      //we use routeName so that we dont need to remenber the name
+      initialRoute: SplashScreen.routeName,
+      routes: routes,
     );
   }
 }
