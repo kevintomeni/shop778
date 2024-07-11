@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:shop778/screens/otp/otp_screen.dart';
 
-import '../../components/custom_suffix_icon.dart';
-import '../../components/default_button.dart';
-import '../../components/form_error.dart';
-import '../../constants.dart';
-import '../../size-config.dart';
+import '../../../components/custom_suffix_icon.dart';
+import '../../../components/default_button.dart';
+import '../../../components/form_error.dart';
+import '../../../constants.dart';
+import '../../../size-config.dart';
 
 class CompleteProfileForm extends StatefulWidget {
   const CompleteProfileForm({super.key});
