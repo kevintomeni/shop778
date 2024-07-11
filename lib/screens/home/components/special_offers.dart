@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../size-config.dart';
+import 'section_title.dart';
 
 class SpecialOffers extends StatelessWidget {
   const SpecialOffers({
@@ -9,24 +10,31 @@ class SpecialOffers extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
-      scrollDirection: Axis.horizontal,
-      child: Row(
-        children: [
-          SpecialOfferCard(
-            image: "assets/images/banner5.jpg",
-            press: () {},
-          ),
-          SpecialOfferCard(
-            image: "assets/images/banner1.jpg",
-            press: () {},
-          ),
-          SizedBox(
-            width: getProportionateScreenWidth(20),
-          )
-        ],
+    return Column(children: [
+      SectionTitle(
+        press: () {},
+        text: "Special for you",
       ),
-    );
+      SizedBox(height: getProportionateScreenWidth(20)),
+      SingleChildScrollView(
+        scrollDirection: Axis.horizontal,
+        child: Row(
+          children: [
+            SpecialOfferCard(
+              image: "assets/images/banner5.jpg",
+              press: () {},
+            ),
+            SpecialOfferCard(
+              image: "assets/images/banner1.jpg",
+              press: () {},
+            ),
+            SizedBox(
+              width: getProportionateScreenWidth(20),
+            )
+          ],
+        ),
+      )
+    ]);
   }
 }
 
