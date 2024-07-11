@@ -5,6 +5,7 @@ import 'categories.dart';
 import 'discount_banner.dart';
 import 'home_header.dart';
 import 'section_title.dart';
+import 'special_offers.dart';
 
 class Body extends StatelessWidget {
   const Body({super.key});
@@ -25,11 +26,12 @@ class Body extends StatelessWidget {
             SectionTitle(
               press: () {},
               text: "Special for you",
-            )
+            ),
+            SizedBox(height: getProportionateScreenWidth(20)),
+            SpecialOffers()
           ],
         ),
       ),
     );
   }
 }
-
