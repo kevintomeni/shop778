@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:shop778/models/product.dart';
+import 'package:shop778/screens/home/components/section_title.dart';
 import 'package:shop778/size-config.dart';
 
+import '../../../components/product_card.dart';
 import 'categories.dart';
 import 'discount_banner.dart';
 import 'home_header.dart';
@@ -21,9 +24,26 @@ class Body extends StatelessWidget {
           SizedBox(height: getProportionateScreenWidth(30)),
           Categories(),
           SizedBox(height: getProportionateScreenWidth(30)),
-          SpecialOffers()
+          SpecialOffers(),
+          SizedBox(height: getProportionateScreenWidth(30)),
+          SectionTitle(text: "Popular Product", press: () {}),
+          SingleChildScrollView(
+            scrollDirection: Axis.horizontal,
+            child: Row(
+              children: [
+                ...List.generate(
+                  demoProducts.length,
+                  (index) => ProductCard(
+                    product: demoProducts[index],
+                  ),
+                ),
+                SizedBox(height: getProportionateScreenWidth(20)),
+              ],
+            ),
+          )
         ]),
       ),
     );
   }
 }
+
