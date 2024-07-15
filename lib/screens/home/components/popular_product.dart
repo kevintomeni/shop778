@@ -25,7 +25,7 @@ class PopularProduct extends StatelessWidget {
               ...List.generate(
                 demoProducts.length,
                 (index) {
-                  if (demoProducts[index].isPopular)
+                  if (demoProducts[0].isPopular)
                     return ProductCard(
                       product: demoProducts[index],
                       press: () => Navigator.pushNamed(
