@@ -37,7 +37,6 @@ class Body extends StatelessWidget {
                           padding: EdgeInsets.only(
                             left: SizeConfig.screenWidth! * 0.15,
                             right: SizeConfig.screenWidth! * 0.15,
-                            top: getProportionateScreenWidth(10),
                           ),
                           child: DefaultButton(
                             text: "Add to Cart",

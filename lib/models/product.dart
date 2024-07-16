@@ -108,7 +108,6 @@ List<Product> demoProducts = [
       "assets/images/protege_Airpord1.jpeg",
       "assets/images/protege_Airpord2.jpeg",
       "assets/images/protege_Airpord3.jpeg",
-      "assets/images/protege_Airpord4.jpeg",
       "assets/images/protege_Airpord5.jpeg",
     ],
     colors: [
@@ -120,7 +119,7 @@ List<Product> demoProducts = [
     title: "Protege AirPord",
     description:
         "Protege vos different AirPord  avec cet accessoire vous donnant encore plus de charisme",
-    price: 26.54,
+    price: 10.54,
     rating: 4.1,
     isFavorite: false,
     isPopular: false,

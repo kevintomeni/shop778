@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:shop778/theme.dart';
 
 import 'routes.dart';
-import 'screens/splash/splash_screen.dart';
+import 'screens/profile/profile_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,9 +19,8 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       // home: SplashScreen(),
       //we use routeName so that we dont need to remenber the name
-      initialRoute: SplashScreen.routeName,
+      initialRoute: ProfileScreen.routeName,
       routes: routes,
     );
   }
 }
-
